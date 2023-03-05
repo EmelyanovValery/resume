@@ -1,0 +1,10 @@
+.header{
+    height: 80px;
+    background-color: dodgerblue;
+
+}
+.containerHeader{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

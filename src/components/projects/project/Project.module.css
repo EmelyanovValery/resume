@@ -1,0 +1,27 @@
+.projectBlock{
+    width: 250px;
+    background-color: #ecc685;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.image{
+    background-color: #987878;
+
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+
+}
+.description{
+
+}
+.link{
+    background-color: #97bd97;
+    border: 1px solid;
+}
