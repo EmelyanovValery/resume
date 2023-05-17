@@ -1,14 +1,23 @@
 import React from 'react';
+import styles from './Footer.module.css'
+import styleContainer from '../../common/styles/Container.module.css'
+import Icon from "./icon/Icon";
 
 const Footer = () => {
     return (
-        <div>
-            <h3>Иван Иванов</h3>
-            <div>
-
+        <div className={styles.footerBlock}>
+            <div className={`${styleContainer.container} ${styles.footerContainer}`}>
+                <h3 className={styles.title}>Иван Иванов</h3>
+                <div className={styles.iconsContainer}>
+                    <Icon/>
+                    <Icon/>
+                    <Icon/>
+                    <Icon/>
+                </div>
+                <span className={styles.copyright}>&copy; 2023 Все права защищены </span>
             </div>
-            <span>&copy; 2023 Все права защищены </span>
         </div>
+
     );
 };
 

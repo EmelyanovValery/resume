@@ -10,7 +10,7 @@ const Contacts = () => {
                 <form action="" className={styles.formContainer}>
                     <input type="text"/>
                     <input type="text"/>
-                    <textarea name="" id="" cols={30} rows={10}>
+                    <textarea name="" id="" cols={10} rows={5} className={styles.textarea}>
 
                     </textarea>
                 </form>

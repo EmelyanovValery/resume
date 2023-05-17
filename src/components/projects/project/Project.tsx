@@ -3,7 +3,7 @@ import styles from "./Project.module.css"
 const Project = () => {
     return (
         <div  className={styles.projectBlock}>
-            <div className={styles.image}>
+            <div className={styles.imageContainer}>
                 <a href="" className={styles.link}>Смотреть</a>
             </div>
             <h3 className={styles.title}>Название проекта</h3>

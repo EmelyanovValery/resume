@@ -12,6 +12,7 @@
 .text{
     width: 300px;
     background-color: aliceblue;
+    padding: 20px;
 }
 .photo{
     width: 300px;

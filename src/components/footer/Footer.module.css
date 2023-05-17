@@ -1,0 +1,21 @@
+.footerBlock{
+    min-height: 25vh;
+    background-color: #eaa896;
+}
+.footerContainer{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.title{
+
+}
+.iconsContainer{
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.copyright{
+
+}

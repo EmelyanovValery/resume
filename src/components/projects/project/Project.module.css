@@ -6,7 +6,7 @@
     align-items: center;
     text-align: center;
 }
-.image{
+.imageContainer{
     background-color: #987878;
 
     width: 100%;
@@ -19,9 +19,11 @@
 
 }
 .description{
+    padding: 10px;
 
 }
 .link{
     background-color: #97bd97;
     border: 1px solid;
+    user-select: none;
 }
