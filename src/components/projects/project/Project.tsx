@@ -1,13 +1,24 @@
 import React from 'react';
-import styles from "./Project.module.css"
-const Project = () => {
+import styles from "./Project.module.scss"
+import CSS from 'csstype';
+
+
+type ProjectPropsType = {
+    description: string
+    title: string
+    style:CSS.Properties
+}
+const Project:React.FC<ProjectPropsType> = (props) => {
     return (
-        <div  className={styles.projectBlock}>
-            <div className={styles.imageContainer}>
-                <a href="" className={styles.link}>Смотреть</a>
+        <div className={styles.projectBlock}>
+            <div style={props.style} className={styles.imageContainer}>
+                <a href="" className={styles.link}>More</a>
             </div>
-            <h3 className={styles.title}>Название проекта</h3>
-            <span className={styles.description}>Краткое описание</span>
+            <div className={styles.descriptionBlock}>
+                <h3 className={styles.title}>{props.title}</h3>
+                <span className={styles.description}>{props.description}</span>
+
+            </div>
         </div>
     );
 };

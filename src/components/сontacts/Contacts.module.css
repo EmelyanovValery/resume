@@ -14,7 +14,7 @@ flex-direction: column;
  }
  .formContainer{
      min-height: 150px;
-     width:280px;
+     width:50%;
      margin-bottom: 20px;
      display: flex;
      flex-direction: column;
@@ -27,4 +27,9 @@ flex-direction: column;
  }
  .textarea{
      height: 50%;
+ }
+ @media screen and (max-width: 500px){
+.formContainer{
+    width: 100%;
+}
  }
