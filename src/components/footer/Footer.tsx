@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Footer.module.css'
+import styles from './Footer.module.scss'
 import styleContainer from '../../common/styles/Container.module.css'
 import Icon from "./icon/Icon";
 
@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <div className={styles.footerBlock}>
             <div className={`${styleContainer.container} ${styles.footerContainer}`}>
-                <h3 className={styles.title}>Иван Иванов</h3>
+                <h3 className={styles.title}>Jeffrey</h3>
                 <div className={styles.iconsContainer}>
                     <Icon/>
                     <Icon/>

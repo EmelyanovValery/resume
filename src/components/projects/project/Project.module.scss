@@ -1,4 +1,5 @@
 @import "../../../common/styles/variables";
+@import "../../../common/styles/mixin";
 .projectBlock {
   width: 300px;
   background-color: $bgSecondColor;
@@ -31,13 +32,12 @@
     }
 
     .link {
-      font-family: 'Josefin Sans', sans-serif;
+      @include text($titleFontFamily,1.2,16px);
       background-color: $primaryColor;
       padding: 12px;
       user-select: none;
       position: relative;
       z-index: 1;
-      color: $textColor;
     }
   }
 
@@ -45,21 +45,15 @@
     padding: 25px 20px;
 
     .title {
-      font-family: 'Josefin Sans', sans-serif;
-      line-height: 1.2;
+      @include text($titleFontFamily,1.2,16px);
       font-weight: 700;
       letter-spacing: 1px;
       margin: 0 0 5px;
-      font-size: 16px;
-      color: $textColor;
     }
 
     .description {
-      color: #fff;
-      font-family: 'Poppins', sans-serif;
-      line-height: 1.8;
+      @include text($textFontFamily,1.8,12px);
       font-weight: 400;
-      font-size: 12px;
     }
   }
 }

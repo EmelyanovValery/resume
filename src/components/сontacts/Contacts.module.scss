@@ -1,0 +1,47 @@
+@import "../../common/styles/variables";
+@import "../../common/styles/mixin";
+.contactsBlock {
+  border: solid 1px;
+  min-height: 100vh;
+  background-color: $bgColor;
+  .contactsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    padding: 100px 0;
+    .formContainer {
+      min-height: 150px;
+      width: 50%;
+      margin: 30px 0 20px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .textarea {
+        height: 50%;
+      }
+    }
+    .button {
+      margin-top: 30px;
+      @include text($titleFontFamily, 1.2, 16px);
+      background-color: $primaryColor;
+      padding: 12px;
+      user-select: none;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+  .formContainer {
+    width: 100%;
+  }
+}

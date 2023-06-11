@@ -1,13 +1,14 @@
 import React from 'react';
-import styles from "./workSchedule.module.css"
+import styles from "./workSchedule.module.scss"
 import styleContainer from "../../common/styles/Container.module.css"
+import Title from "../../common/components/Title";
 
 const WorkSchedule = () => {
     return (
         <div className={styles.workScheduleBlock}>
             <div className={styleContainer.container+" "+styles.workScheduleContainer}>
-                <h3 className={styles.title}>Рассматриваю варианты удаленной работы</h3>
-                <a href="" className={styles.button}>Нанять меня</a>
+                <Title text={"I Am Available For Freelancer"} />
+                <a href="" className={styles.button}>HIRE ME</a>
             </div>
         </div>
     );
